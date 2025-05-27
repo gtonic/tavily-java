@@ -1,0 +1,27 @@
+version: '3'
+
+vars:
+  ARTIFACT_ID: tavily-java-sdk
+  VERSION: 1.0-SNAPSHOT # Note: If pom.xml version changes, update this var or make it dynamic.
+
+tasks:
+  default:
+    desc: "Default task: builds the project."
+    cmds:
+      - task: build
+    silent: true
+
+  build:
+    desc: "Build the project and create the JAR file (e.g., target/tavily-java-sdk-1.0-SNAPSHOT.jar)."
+    cmds:
+      - mvn package
+    sources:
+      - "src/main/java/**/*.java" # Assumes standard Java project structure
+      - "pom.xml"
+    generates:
+      - "target/{{.ARTIFACT_ID}}-{{.VERSION}}.jar"
+
+  clean:
+    desc: "Clean the project by removing the target directory."
+    cmds:
+      - mvn clean
