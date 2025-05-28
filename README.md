@@ -29,9 +29,9 @@ To use the Tavily Java SDK, you will typically need to:
 
 ```java
 // Import Tavily client (actual class name might differ)
-// import com.alp54.tavily.sdk.TavilyClient;
-// import com.alp54.tavily.sdk.TavilyRequest;
-// import com.alp54.tavily.sdk.TavilyResponse;
+import com.alp54.tavily.sdk.TavilyClient;
+import com.alp54.tavily.sdk.TavilyRequest;
+import com.alp54.tavily.sdk.TavilyResponse;
 
 public class TavilyExample {
 
@@ -40,25 +40,22 @@ public class TavilyExample {
         String apiKey = "YOUR_API_KEY";
 
         // Instantiate the client (actual instantiation might differ)
-        // TavilyClient tavilyClient = new TavilyClient(apiKey);
+        TavilyClient tavilyClient = new TavilyClient(apiKey);
 
         // Create a request (actual request object and parameters might differ)
-        // TavilyRequest request = new TavilyRequest("your search query");
-        // request.setSomeParameter("value"); // Example of setting parameters
+        TavilyRequest request = new TavilyRequest("your search query");
+        request.setSomeParameter("value"); // Example of setting parameters
 
         try {
             // Perform the search (actual method name might differ)
-            // TavilyResponse response = tavilyClient.search(request);
+            TavilyResponse response = tavilyClient.search(request);
 
             // Process the response
-            // System.out.println("Search Results: " + response.getResults());
-            System.out.println("Please replace this example with actual usage once the SDK classes are defined.");
-            System.out.println("The SDK classes (e.g., TavilyClient, TavilyRequest, TavilyResponse) need to be implemented.");
-
+            System.out.println("Search Results: " + response.getResults());
+            
         } catch (Exception e) {
             e.printStackTrace();
-        }
-    }
+        }    }
 }
 ```
 
