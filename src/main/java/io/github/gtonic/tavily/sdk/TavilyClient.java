@@ -1,8 +1,10 @@
-package com.alp54.tavily.sdk; // Updated package
+package io.github.gtonic.tavily.sdk; // Updated package
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.alp54.tavily.sdk.model.SearchRequest; // Updated import
-import com.alp54.tavily.sdk.model.SearchResponse; // Updated import
+
+import io.github.gtonic.tavily.sdk.model.SearchRequest;
+import io.github.gtonic.tavily.sdk.model.SearchResponse;
+
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;

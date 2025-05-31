@@ -1,8 +1,8 @@
-package com.alp54.tavily.sdk.demo;
+package io.github.gtonic.tavily.sdk.demo;
 
-import com.alp54.tavily.sdk.TavilyClient;
-import com.alp54.tavily.sdk.model.SearchResponse;
-import com.alp54.tavily.sdk.model.SearchResult;
+import io.github.gtonic.tavily.sdk.TavilyClient;
+import io.github.gtonic.tavily.sdk.model.SearchResponse;
+import io.github.gtonic.tavily.sdk.model.SearchResult;
 
 import java.io.IOException;
 
