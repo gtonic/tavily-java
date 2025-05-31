@@ -1,4 +1,4 @@
-package com.alp54.tavily.sdk.model;
+package io.github.gtonic.tavily.sdk.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
